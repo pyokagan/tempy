@@ -1,0 +1,35 @@
+from setuptools import setup
+
+setup(name='tempy',
+      version='0.9.0',
+      description='Simple Python templates',
+      url='https://github.com/pyokagan/tempy',
+      author='Paul Tan',
+      author_email='pyokagan@gmail.com',
+      license='MIT',
+      py_modules=['tempy'],
+      classifiers=[
+          'Development Status :: 3 - Alpha',
+          'Intended Audience :: Developers',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+          'Topic :: Text Processing',
+          'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
+          'License :: OSI Approved :: MIT License',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 2.6',
+          'Programming Language :: Python :: 2.7',
+          'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.2',
+          'Programming Language :: Python :: 3.3',
+          'Programming Language :: Python :: 3.4',
+          'Operating System :: OS Independent',
+          'Environment :: Console',
+          'Environment :: Web Environment',
+      ],
+      keywords='template',
+      entry_points={
+          'console_scripts': [
+              'tempy=tempy:main',
+          ],
+      },
+      )
